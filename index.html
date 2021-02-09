@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Assignment</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+<div class="main1">
+    <h2>This is full stack assignment 2</h2> <br>
+    <a class="link1" href="#">This is Link</a>
+    <br> <br> <br>
+
+    <div class="list">
+       <ul>
+        <li>
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">JAVASCRIPT</a>
+            <a href="#">FRONTEND</a>
+            <a href="#">BACKEND</a>
+            <a class="hide" href="#">Hide Cursor</a>
+        </li>
+       </ul>
+    </div>
+        <br><br>    
+        <hr style="background-color: aliceblue;">
+        <br><br>
+    
+<!-- Javascript section -->
+
+    <div class="js__section">
+        
+        <button class="btn__time" type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+        
+        <p id="demo"></p> <br>
+        
+        <button class="toggle__btn" onclick="myFunction()">Click Me To Change</button>
+
+        <div class="myDIV" id="myDIV">Hello</div>
+
+    </div>
+
+    <br><br>
+
+    <div class="display">
+        <button class="btn__display" onclick="myFunction2()">Hide above elements</button>        
+    </div>
+    <br>
+
+</div>
+
+<script>
+
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "Hello") {
+    x.innerHTML = "Sir!";
+  } else {
+    x.innerHTML = "Hello";
+  }
+}
+
+function myFunction2() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+</script>
+
+
+</body>
+</html>
